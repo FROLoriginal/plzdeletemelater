@@ -1,4 +1,4 @@
-all: presentation reppdf repdocx
+all: pres reppdf repdocx
 	
 pres:
 	pandoc.exe presentation.md -o presentation.pdf --pdf-engine=lualatex -F pandoc-crossref --number-sections -t beamer --slide-level=2 
